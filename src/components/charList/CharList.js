@@ -1,38 +1,27 @@
 import { useState, useEffect, useRef } from 'react';
-import MarvelService from '../../services/MarvelService';
+import useMarvelService from '../../services/MarvelService';
 import Spinner from '../spinner/Spinner';
 import './charList.scss';
 
 const CharList = (props) => {
 
     const [chars, setChars] = useState([])
-    const [loading, setLoading] = useState(true)
     const [newListLoading, setNewListLoading] = useState(false)
     const [offset, setOffset] = useState(210)
     const [ended, setEnded] = useState(false)
 
+    const { loading, getAllCharacters } = useMarvelService();
+
     useEffect(() => {
-        updateCharList();
+        onRequest(offset, true);
     }, [])
 
-
-    const marvelService = new MarvelService();
-
-    const onRequest = (offset) => {
-        onCharListLoading();
-        marvelService
-            .getAllCharacters(offset)
-            .then(onCharListLoaded)
+    const onRequest = (offset, initial) => {
+        initial ? setNewListLoading(false) : setNewListLoading(true)
+        getAllCharacters(offset).then(onCharListLoaded)
     }
 
-    const updateCharList = () => {
-        setLoading(true)
-        onRequest();
-    }
-
-    const onCharListLoading = () => {
-        setNewListLoading(true)
-    }
+  
 
     const onCharListLoaded = (newCharList) => {
         if (newCharList.length < 9) {
@@ -40,7 +29,6 @@ const CharList = (props) => {
         }
 
         setChars(chars => [...chars, ...newCharList])
-        setLoading(false)
         setNewListLoading(false)
         setOffset(offset => offset + 9)
     }
@@ -56,8 +44,10 @@ const CharList = (props) => {
 
     let item = null
 
-    if (!loading) {
-       item = chars.map((char, i) => {
+    if (loading && !newListLoading) {
+        item = <Spinner />
+    } else {
+        item = chars.map((char, i) => {
             return (
                 < li key={char.id}
                     tabIndex={0}
@@ -79,13 +69,11 @@ const CharList = (props) => {
                 </li >
             )
         })
-    } else {
-        item =  <Spinner />
     }
 
     return (
         <div className="char__list">
-            <ul className="char__grid" style={{ display: loading ? 'flex' : 'grid', justifyContent: 'center' }}>
+            <ul className="char__grid" style={{ display: loading && !newListLoading ? 'flex' : 'grid', justifyContent: 'center' }}>
                 {item}
             </ul>
             {ended === false ? <button

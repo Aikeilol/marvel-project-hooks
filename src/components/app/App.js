@@ -2,6 +2,7 @@ import AppHeader from "../appHeader/AppHeader";
 import RandomChar from "../randomChar/RandomChar";
 import CharList from "../charList/CharList";
 import CharInfo from "../charInfo/CharInfo";
+import ComicsList from "../comicsList/ComicsList";
 import { useState } from 'react';
 import decoration from '../../resources/img/vision.png';
 
@@ -22,6 +23,7 @@ const App = () => {
                     <CharList onCharSelected={onCharSelected} />
                     <CharInfo charId={selectedChar} />
                 </div>
+                <ComicsList/>
                 <img className="bg-decoration" src={decoration} alt="vision" />
             </main>
         </div>
