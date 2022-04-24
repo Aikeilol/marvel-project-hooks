@@ -19,7 +19,7 @@ const ComicsList = () => {
     }
 
     const updateComics = (newComics) => {
-        setComics(() => [...newComics, ...comics])
+        setComics(() => [...comics, ...newComics])
         setOffset(offset + 8)
     }
 
@@ -39,7 +39,7 @@ const ComicsList = () => {
 
     return (
         <div className="comics__list">
-            <ul className="comics__grid" style={{display: loading && !newItemLoading ? 'flex' : 'grid' }}>
+            <ul className="comics__grid" style={{ display: loading && !newItemLoading ? 'flex' : 'grid' }}>
                 {spinner}
                 {renderComics}
             </ul>
