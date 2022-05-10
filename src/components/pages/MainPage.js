@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import RandomChar from "../randomChar/RandomChar";
 import CharList from "../charList/CharList";
 import CharInfo from "../charInfo/CharInfo";
@@ -7,10 +7,16 @@ import decoration from '../../resources/img/vision.png';
 const MainPage = () => {
 
   const [selectedChar, setChar] = useState(null)
+  // const vision = useRef(null)
 
   const onCharSelected = (id) => {
     setChar(id)
   }
+
+  // useEffect(() => {
+  //   console.log(vision.current.getBoundingClientRect().top)
+  // })
+  
 
   return (
     <>
