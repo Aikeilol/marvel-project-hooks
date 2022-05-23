@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/marvel-project-hooks/static/css/main.c3cc9d64.chunk.css",
+    "main.js": "/marvel-project-hooks/static/js/main.61a58785.chunk.js",
+    "main.js.map": "/marvel-project-hooks/static/js/main.61a58785.chunk.js.map",
+    "runtime-main.js": "/marvel-project-hooks/static/js/runtime-main.28dd526b.js",
+    "runtime-main.js.map": "/marvel-project-hooks/static/js/runtime-main.28dd526b.js.map",
+    "static/js/2.be47fa5a.chunk.js": "/marvel-project-hooks/static/js/2.be47fa5a.chunk.js",
+    "static/js/2.be47fa5a.chunk.js.map": "/marvel-project-hooks/static/js/2.be47fa5a.chunk.js.map",
+    "static/css/3.2cb367f5.chunk.css": "/marvel-project-hooks/static/css/3.2cb367f5.chunk.css",
+    "static/js/3.2887d7cc.chunk.js": "/marvel-project-hooks/static/js/3.2887d7cc.chunk.js",
+    "static/js/3.2887d7cc.chunk.js.map": "/marvel-project-hooks/static/js/3.2887d7cc.chunk.js.map",
+    "static/js/4.2549a91e.chunk.js": "/marvel-project-hooks/static/js/4.2549a91e.chunk.js",
+    "static/js/4.2549a91e.chunk.js.map": "/marvel-project-hooks/static/js/4.2549a91e.chunk.js.map",
+    "static/css/5.6b0b4494.chunk.css": "/marvel-project-hooks/static/css/5.6b0b4494.chunk.css",
+    "static/js/5.2009979b.chunk.js": "/marvel-project-hooks/static/js/5.2009979b.chunk.js",
+    "static/js/5.2009979b.chunk.js.map": "/marvel-project-hooks/static/js/5.2009979b.chunk.js.map",
+    "static/css/6.8ab6df8a.chunk.css": "/marvel-project-hooks/static/css/6.8ab6df8a.chunk.css",
+    "static/js/6.1f0b0cf8.chunk.js": "/marvel-project-hooks/static/js/6.1f0b0cf8.chunk.js",
+    "static/js/6.1f0b0cf8.chunk.js.map": "/marvel-project-hooks/static/js/6.1f0b0cf8.chunk.js.map",
+    "static/js/7.53f66c76.chunk.js": "/marvel-project-hooks/static/js/7.53f66c76.chunk.js",
+    "static/js/7.53f66c76.chunk.js.map": "/marvel-project-hooks/static/js/7.53f66c76.chunk.js.map",
+    "index.html": "/marvel-project-hooks/index.html",
+    "static/css/3.2cb367f5.chunk.css.map": "/marvel-project-hooks/static/css/3.2cb367f5.chunk.css.map",
+    "static/css/5.6b0b4494.chunk.css.map": "/marvel-project-hooks/static/css/5.6b0b4494.chunk.css.map",
+    "static/css/6.8ab6df8a.chunk.css.map": "/marvel-project-hooks/static/css/6.8ab6df8a.chunk.css.map",
+    "static/css/main.c3cc9d64.chunk.css.map": "/marvel-project-hooks/static/css/main.c3cc9d64.chunk.css.map",
+    "static/js/2.be47fa5a.chunk.js.LICENSE.txt": "/marvel-project-hooks/static/js/2.be47fa5a.chunk.js.LICENSE.txt",
+    "static/media/Avengers.4065c8f9.png": "/marvel-project-hooks/static/media/Avengers.4065c8f9.png",
+    "static/media/Avengers_logo.9eaf2193.png": "/marvel-project-hooks/static/media/Avengers_logo.9eaf2193.png",
+    "static/media/error.42292aa1.gif": "/marvel-project-hooks/static/media/error.42292aa1.gif",
+    "static/media/mjolnir.61f31e18.png": "/marvel-project-hooks/static/media/mjolnir.61f31e18.png",
+    "static/media/vision.067d4ae1.png": "/marvel-project-hooks/static/media/vision.067d4ae1.png",
+    "static/media/x-men.41b39e19.png": "/marvel-project-hooks/static/media/x-men.41b39e19.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28dd526b.js",
+    "static/js/2.be47fa5a.chunk.js",
+    "static/css/main.c3cc9d64.chunk.css",
+    "static/js/main.61a58785.chunk.js"
+  ]
+}
