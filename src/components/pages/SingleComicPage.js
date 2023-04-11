@@ -4,7 +4,6 @@ import useMarvelService from '../../services/MarvelService';
 import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import './SingleComicPage.scss';
-import xMen from '../../resources/img/x-men.png';
 
 const SingleComicPage = () => {
   const { comicId } = useParams();
